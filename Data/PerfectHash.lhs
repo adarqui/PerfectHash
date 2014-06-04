@@ -32,7 +32,7 @@ standard idiom for an opaque type
 
 > data PerfectHash a = PerfectHash { store     :: !(Array.Array Word32 (a,CString)),
 >                                    cmph      :: Ptr ForeignHash 
->                                  }
+>                                  } deriving (Show)
 
 is this even a sane thing to do?
 
